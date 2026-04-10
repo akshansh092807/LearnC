@@ -1,12 +1,14 @@
 #include<stdio.h>
-float convertTemp(float celsius);
+int calcPercentage(int science, int math, int sanskrit);
 
 int main(){
-    float far = convertTemp(37);
-printf("Far : %f", far);
+    int sc = 98;
+    int math = 95;
+    int sanskrit = 99;
+
+printf("Percentage is : %d ", calcPercentage(sc, math, sanskrit));
 return 0;
 }
-float convertTemp(float celsius){
-    float far = celsius * (9.0/5.0) + 32;
-    return far;
+int calcPercentage(int science, int math,  int sanskrit){
+    return ((science + math + sanskrit) / 3) ;
 }

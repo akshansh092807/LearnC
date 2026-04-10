@@ -1,14 +1,22 @@
-#include<stdio.h>
-int calcPercentage(int science, int math, int sanskrit);
-
+#include<stdio.h> // fibonacci sequence 0 1 1 2 3 5 8 13 21 ........
+int fib(int n);
 int main(){
-    int sc = 98;
-    int math = 95;
-    int sanskrit = 99;
-
-printf("Percentage is : %d ", calcPercentage(sc, math, sanskrit));
+    printf("%d", fib(6));
 return 0;
 }
-int calcPercentage(int science, int math,  int sanskrit){
-    return ((science + math + sanskrit) / 3) ;
+int fib(int n) {
+    if (n == 0 || n == 1) {
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1;
+        }
+    }
+    int fibNm1 = fib(n-1);
+    int fibNm2 = fib(n-2);
+    int fibN = fibNm1 + fibNm2;
+    printf("fib of %d is : %d\n", n, fibN);
+    return fibN;
+
 }

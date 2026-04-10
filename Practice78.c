@@ -1,13 +1,12 @@
 #include<stdio.h>
-int fact (int n);
+float convertTemp(float celsius);
 
 int main(){
-printf("Factorial is : %d", fact(4));
+    float far = convertTemp(37);
+printf("Far : %f", far);
 return 0;
 }
-int fact (int n){
-    printf("Calculate fact of n : %d\n", n);
-int factNm1 = fact(n-1);
-int factN = factNm1 * n;
-return factN;
-} //base case in recursion
+float convertTemp(float celsius){
+    float far = celsius * (9.0/5.0) + 32;
+    return far;
+}
