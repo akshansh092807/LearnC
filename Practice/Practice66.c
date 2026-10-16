@@ -1,22 +1,21 @@
 #include<stdio.h>
-// declaration/ prototype
 void namaste();
 void bonjour();
 
-int main(){
-printf("Enter f for french & i for indian : ");
-char ch;
-scanf("%c", &ch);
 
-if (ch == 'i') {
-    namaste();
-}else {
-    bonjour ();
-}
-    
+int main(){
+    printf("Enter f for french and i for indian: ");
+    char ch;
+    scanf("%c", &ch);
+    if(ch == 'i'){
+        namaste();
+    } else {
+        bonjour();
+    }
+ 
 return 0;
 }
-void namaste() {
+void namaste(){
     printf("Namaste\n");
 }
 void bonjour(){

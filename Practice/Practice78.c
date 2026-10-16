@@ -1,9 +1,8 @@
 #include<stdio.h>
 float convertTemp(float celsius);
-
 int main(){
-    float far = convertTemp(37);
-printf("Far : %f", far);
+    float far = convertTemp(0);
+    printf("far : %f", far);
 return 0;
 }
 float convertTemp(float celsius){

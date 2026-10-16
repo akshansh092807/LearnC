@@ -1,15 +1,12 @@
 #include<stdio.h>
-// declaration/ prototype
-void printHello();
-
+void printHello(); //declaration/prototype
 int main(){
-printHello(); // function call
-printHello();
-printHello();
-return 0;
+    printHello(); 
+     printHello(); 
+      printHello(); // function call
+    return 0;
 }
-//  function definition
-void printHello() {
-    printf("Hello!\n");
-       printf("My name is Akshansh\n");
+// function definition
+void printHello(){
+printf("Hello Akshansh\n");
 }
