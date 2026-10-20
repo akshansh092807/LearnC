@@ -1,0 +1,3 @@
+student name: Akshansh
+student age: 19
+student cgpa: 8.500000

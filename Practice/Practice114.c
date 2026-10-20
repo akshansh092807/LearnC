@@ -2,7 +2,7 @@
 void printString(char arr[]);
 int main(){
  char str[100];
- gets(str);
+ gets(str); // unsafe
  puts(str);
 
     return 0;
